@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //1.length
+let arr=[1,2,3,4,5,6,7,8,"usha"]
+console.log(arr.length)
+console.log(arr.length-1)
+arr2=arr.length-1
+console.log(arr[arr2])
+
+//2.push
+let arr3=[1,2,3,4,5,6]
+arr3.push("usha")
+console.log(arr3)
+
+let fruits=["apple","banana","pineapple"]
+fruits1=fruits.push("orange")
+console.log(fruits1)//4
+
+let veg=["beans","potato"]
+veg.push("carrot")
+console.log(veg)
+
+//3.pop
+let arr4=[1,4,7,9]
+arr4.pop()
+console.log(arr4)
+
+let fruits2=["banana","apple","guava"]
+fruits2.pop()
+console.log(fruits2)
+
+let veg1=["carrot","beans","potato"]
+veg1.pop()
+console.log(veg1)
+
+//4.unshift
+let mobiles=["MI","oppo","Apple"]
+mobiles.unshift("Samsung")
+console.log(mobiles)
+
+let color=["black","blue","green"]
+color.unshift("red")
+console.log(color)
+
+let arr5=[1,2,3,4]
+arr5.unshift("0")
+console.log(arr5)
+
+let arr6=[1,5,9]
+console.log(arr6.unshift("hi"))
+
+//5.shift
+let laptops=["dell","lenovo","hp"]
+laptops.shift()
+console.log(laptops)
+
+let food=["pizza","burger","kfc"]
+food.shift()
+console.log(food)
+
+let num=[1,4,,6,8]
+num.shift()
+console.log(num)
+
+
+//6.splice
+let arr7=[1,2,3,4,5]
+arr7.splice(1,2,"hi","hello")
+console.log(arr7)
+
+let name=["usha","pendyala"]
+name.splice(1,0,"rani")
+console.log(name)
+
+let name1=[1,7,9]
+name1.splice(0,0)
+console.log(name1)
+
+//7.sort
+let arr8=[4,2,9,6,5,10,500]
+arr8.sort()
+console.log(arr8)
+
+let names=["usha","Usha","ash"]
+names.sort()
+console.log(names)//sorts based on ascii values
+
+let nums=[10,700,6,7,900,5,3]
+nums.sort((a,b)=>b-a)
+console.log(nums)//descending order
+
+
+//8.reverse
+let arr9=["car","bike","cycle"]
+arr9.reverse()
+console.log(arr9)
+
+let arr10=[[1,2,3],{name:"usha"},9,"hi"]
+arr10.reverse()
+console.log(arr10)
+
+let colors=["red","black"]
+colors.reverse()
+console.log(colors)
+
+//9.join-output in string format
+let sentence=["welcome","to","India"]
+console.log(sentence.join("_"))
+
+let numbers=[1,2,3,4]
+console.log(numbers.join("&"))
+
+let fruit=["banana","apple"]
+console.log(fruit.join("%"))
+
+//10.concat
+let arr11=["usha","pendyala"]
+let arr12=["software","engineer"]
+console.log(arr11.concat(arr12))
+
+let arr13=["welcome"]
+console.log(arr13.concat("To","India"))
+
+let arr14=[1,3,4,5]
+concated_arr=arr14.concat(arr13)
+console.log(concated_arr)
+
+//11.includes
+let names1=["usha","ashwitha","abhi","jay"]
+console.log(names1.includes("usha"))
+
+console.log(names1.includes("Jay"))
+
+console.log(names1.includes("USHA"))
+
+//12.lastIndexOf
+let num3=[1,3,2,3,5,9,6]
+console.log(num3.lastIndexOf(2))
+
+let namess=["usha","ashwitha","usha","ashwitha"]
+console.log(namess.lastIndexOf("usha"))
+
+let numberss=[1,3,5,7,9,0]
+console.log(numberss.lastIndexOf(10))
+
+
+//13.indexOf
+let cars=["audi","benze","swift"]
+console.log(cars.indexOf("audi"))
+
+console.log(cars.indexOf("Verna"))
+
+console.log(cars.indexOf("swift"))
+
+//14.flat
+let array=[1,2,3,[1,2,3],[1,[1,3,4]]]
+console.log(array.flat(1))
+
+console.log(array.flat(4))
+
+let array1=[1,4,5,[17,[1,7,[8,9]]]]
+console.log(array1.flat("infinity"))
+
+console.log(array1.flat("-infinity"))
+
+//15.toString
+let value=[1,5,7,9]
+console.log(value.toString())
+
+let values=["usha",-8,0.8,7]
+console.log(values.toString())
+
+
+
+//Print the Even Numbers in an array
+
+let evenArray=[1,2,3,4,5,6,7,8,9,10,40,78,35,98,64]
+for(let i=0;i<evenArray.length;i++){
+    if(evenArray[i]%2==0){
+        console.log(evenArray[i])
+    }
+}
+
+</script>
+</body>
+</html>
